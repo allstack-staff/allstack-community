@@ -1,0 +1,34 @@
+# Arquivos de build
+dist/
+build/
+out/
+
+# Dependências instaladas
+node_modules/
+
+# Arquivos de configuração do VSCode
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Outros arquivos e diretórios específicos do seu projeto
+# Adicione aqui quaisquer arquivos ou diretórios adicionais que você deseja ignorar
+
+# Ignorar arquivos específicos do projeto Nest.js
+/nest/node_modules/
+/nest/.env
+/nest/.env.*
+
+# Ignorar arquivos específicos do projeto Next.js
+/next/node_modules/
+/next/.env
+/next/.env.*
+
+# Ignorar arquivos específicos do projeto Docker
+.docker/
+
+

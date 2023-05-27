@@ -15,7 +15,7 @@ export default function Navbar_Login() {
               alt="AllStack-icon"
               width={128}
               height={128}
-              layout="responsive"
+             // layout="responsive"
             />
           </div>
           <p className="text-center ">

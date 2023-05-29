@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { GoogleIcon, AppleIcon, SsoIcon } from "./components/icons";
 import Form from "./components/Form";
 
@@ -19,7 +19,7 @@ function Login() {
         </div>
         <div>
           <h2>Ou conecte-se com</h2>
-          <div>
+          <div className="hidden md:flex flex-row min-w-fit max-w-fit justify-center items-center gap-3">
             <span>
               <GoogleIcon />
             </span>

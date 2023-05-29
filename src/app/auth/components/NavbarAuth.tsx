@@ -13,8 +13,8 @@ export default function Navbar_Login() {
             <Image
               src="/images/AllStack.svg"
               alt="AllStack-icon"
-              width={128}
-              height={128}
+              width={118}
+              height={118}
              // layout="responsive"
             />
           </div>

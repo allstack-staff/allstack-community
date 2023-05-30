@@ -4,8 +4,8 @@ import Form from "./components/Form";
 
 function Login() {
   return (
-    <>
-      <section>
+    <main className="grid grid-cols-2">
+      <section className="">
         <div>
           <p>Crie sua Conta</p>
           <Form />
@@ -34,10 +34,20 @@ function Login() {
           </div>
         </div>
       </section>
-      <article>
-        <div></div>
+      <article className="hidden md:flex flex-row ">
+        <div>
+          <div>
+            
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
       </article>
-    </>
+    </main>
   );
 }
 

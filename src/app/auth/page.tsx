@@ -1,6 +1,10 @@
-import React from "react";
+import Elipse49 from "./components/icons/svg/Ellipse49.svg";
+import ti51 from "./components/icons/svg/ti51.svg";
+import Elipse50 from "./components/icons/svg/Ellipse50.svg";
 import { GoogleIcon, AppleIcon, SsoIcon } from "./components/icons";
+import React from "react";
 import Form from "./components/Form";
+import Image from "next/image";
 
 function Login() {
   return (
@@ -35,15 +39,15 @@ function Login() {
         </div>
       </section>
       <article className="hidden md:flex flex-row ">
-        <div>
-          <div>
-            
+        <div className="relative">
+          <div className="">
+            <Image src={Elipse49} width={500} height={500} alt="" />
           </div>
-          <div>
-
+          <div className="">
+            <Image src={Elipse50} width={500} height={500} alt="" />
           </div>
-          <div>
-
+          <div className="">
+            <Image src={ti51} width={500} height={500} alt="" />
           </div>
         </div>
       </article>

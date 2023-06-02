@@ -1,4 +1,8 @@
 import Input from "./Input";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({ weight: ["500"], subsets: ["latin"] });
+
 
 const buttonStyle = {
   backgroundColor: "#2179DF",
@@ -19,7 +23,7 @@ function Form() {
         />
       </div>
       <div>
-        <button type="submit" className="text-white" style={buttonStyle}>
+        <button type="submit" className={roboto.className, "text-white"} style={buttonStyle}>
           Continuar
         </button>
       </div>

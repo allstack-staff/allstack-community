@@ -1,17 +1,24 @@
+import React from "react";
+
+//Icones
 import Elipse49 from "./components/icons/svg/Ellipse49.svg";
 import ti51 from "./components/icons/svg/ti51.svg";
 import Elipse50 from "./components/icons/svg/Ellipse50.svg";
 import { GoogleIcon, AppleIcon, SsoIcon } from "./components/icons";
-import React from "react";
+// Components
 import Form from "./components/Form";
 import Image from "next/image";
+
+
 
 function Login() {
   return (
     <section className="grid grid-cols-2">
       <article className="">
         <div>
-          <p>Crie sua Conta</p>
+          <p style={{ fontFamily: "'Inter', sans-serif" }} className="text-4xl font-bold leading-10">
+            Crie sua Conta
+          </p>
           <Form />
         </div>
         <div>

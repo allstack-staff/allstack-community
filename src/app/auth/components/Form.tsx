@@ -7,14 +7,14 @@ const roboto = Roboto({ weight: ["500"], subsets: ["latin"] });
 const buttonStyle = {
   backgroundColor: "#2179DF",
   borderRadius: "15px",
-  width: "23.625rem",
-  height: "3.5625rem",
+  width: "19rem",
+  height: "2.5rem",
 };
 
 function Form() {
   return (
     <form>
-      <div style={{ position: "relative" }}>
+      <div className="relative">
         <Input
           Placeholder="Endereço de e-mail"
           Type="email"
@@ -22,8 +22,8 @@ function Form() {
           Required={true}
         />
       </div>
-      <div>
-        <button type="submit" className={roboto.className, "text-white"} style={buttonStyle}>
+      <div className="w-2">
+        <button type="submit" className={`${roboto.className} text-white`} style={buttonStyle}>
           Continuar
         </button>
       </div>

@@ -13,7 +13,7 @@ const buttonStyle = {
 
 function Form() {
   return (
-    <form>
+    <form className="pl-20 pr-20 pt-16">
       <div className="relative">
         <Input
           Placeholder="Endereço de e-mail"
@@ -22,7 +22,7 @@ function Form() {
           Required={true}
         />
       </div>
-      <div className="w-2">
+      <div className="w-2 m-1 ml-[20px]">
         <button type="submit" className={`${roboto.className} text-white`} style={buttonStyle}>
           Continuar
         </button>

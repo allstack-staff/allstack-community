@@ -79,16 +79,16 @@ function Login() {
       </article>
 
       {/*elipses*/}
-      <article className="hidden relative md:flex flex-row">
-        <div className="overflow-x-hidden">
-          <div className="absolute top-0 right-0 z-0">
-            <Image src={Elipse49} width={600} height={250} alt="" />
+      <article className="hidden relative h-screen md:flex">
+        <div className="">
+          <div className="absolute  top-0 right-0 z-0">
+            <Image src={Elipse49} width={433} height={960} alt="" />
           </div>
-          <div className="absolute top-18 right-0 z-10">
-            <Image src={Elipse50} width={471.8} height={471.8} alt="" />
+          <div className="absolute  top-18 right-0 z-10">
+            <Image src={Elipse50} width={615} height={985} alt="" />
           </div>
-          <div className="absolute top-20 left-0 z-20">
-            <Image src={ti51} width={537.2} height={537.2} alt="" />
+          <div className="absolute z-20">
+            <Image src={ti51} width={904 - 310} height={851 - 310} alt="" />
           </div>
         </div>
       </article>

@@ -13,13 +13,13 @@ export default function Navbar_Login() {
             <Image
               src="/images/AllStack.svg"
               alt="AllStack-icon"
-              width={118}
-              height={118}
+              width={100}
+              height={100}
              // layout="responsive"
             />
           </div>
           <p className="text-center ">
-            <span className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl ">
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
               <span className="bg-gradient-to-r from-blue-500 to-blue-900 text-transparent bg-clip-text">
                 All
               </span>

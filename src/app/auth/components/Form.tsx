@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ weight: ["500"], subsets: ["latin"] });
 
-
 const buttonStyle = {
   backgroundColor: "#2179DF",
   borderRadius: "15px",
@@ -13,7 +12,7 @@ const buttonStyle = {
 
 function Form() {
   return (
-    <form className="pl-20 pr-20 pt-16">
+    <form className="md:px-20 md:pt-11">
       <div className="relative">
         <Input
           Placeholder="Endereço de e-mail"
@@ -22,8 +21,8 @@ function Form() {
           Required={true}
         />
       </div>
-      <div className="w-2 m-1 ml-[20px]">
-        <button type="submit" className={`${roboto.className} text-white`} style={buttonStyle}>
+      <div className="w-2 m-1 md:ml-[3em] md:mt-[2em] ">
+        <button type="submit" className={`${roboto.className}  text-white`} style={buttonStyle}>
           Continuar
         </button>
       </div>

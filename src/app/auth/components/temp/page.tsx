@@ -73,24 +73,18 @@ function Login() {
       </article>
 
       {/*elipses*/}
-      <article className="">
-        <ul className="flex w-full h-full justify-center items-center">
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={Elipse49} width={433} height={960} alt="" />
-            </div>
-          </li>
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={Elipse50} width={615} height={985} alt="" />
-            </div>
-          </li>
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={ti51} width={904 - 310} height={851 - 310} alt="" />
-            </div>
-          </li>
-        </ul>
+      <article className="hidden relative md:flex">
+        <div className="">
+          <div className="absolute  top-0 right-0 z-0">
+            <Image src={Elipse49} width={433} height={960} alt="" />
+          </div>
+          <div className="absolute  top-18 right-0 z-10">
+            <Image src={Elipse50} width={615} height={985} alt="" />
+          </div>
+          <div className="absolute -top-4 z-20">
+            <Image src={ti51} width={904 - 310} height={851 - 310} alt="" />
+          </div>
+        </div>
       </article>
     </section>
   );

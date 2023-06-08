@@ -26,10 +26,10 @@ function Login() {
   return (
     <section className="grid grid-cols-2">
       <article className="flex flex-col items-center">
-        <div className="md:mt-[2.5em]">
+        <div className="mt-[2.5em]">
           <p
             style={{ fontFamily: "'Inter', sans-serif" }}
-            className="text-4xl font-bold">
+            className="text-2xl font-bold md:text-4xl">
             Crie sua Conta
           </p>
         </div>

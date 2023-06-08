@@ -1,19 +1,9 @@
 import { NextPage } from "next/types";
 import React from "react";
 
-const inputStyle = {
-  position: "relative",
-};
-
 const placeholderStyle = {
-  position: "absolute",
-  top: 10,
-  left: 0,
-  padding: "10px",
   transform: "translate(10px, -50%)",
-  fontSize: "12px",
   color: "gray",
-  userSelect: "none",
 };
 
 const Input: NextPage<{
@@ -24,14 +14,14 @@ const Input: NextPage<{
 }> = ({ Placeholder = "", Type = "text", Id = "", Required = false }) => {
   return (
     <div>
-      <div style={inputStyle}>
+      <div className="md:relative">
         <input
           type={Type}
           id={Id}
           {...(Required && { required: true })}
-          className="border-2 border-gray-600 rounded-lg w-517 h-68"
+          className="border-2 border-gray-600 rounded-lg md:w-517 md:h-68"
         />
-        <span style={placeholderStyle}>{Placeholder}</span>
+        <span style={placeholderStyle} className="md:absolute md:top-[10px] md:left-0 md:p-[10px] md:select-none md:text-xs">{Placeholder}</span>
       </div>
     </div>
   );

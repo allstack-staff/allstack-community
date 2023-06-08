@@ -35,7 +35,7 @@ function Login() {
         </div>
         <Form />
 
-        <div className="block md:my-4" style={font}>
+        <div className="md:my-4" style={font}>
           <p className="">
             Ao continuar, eu concordo com a{" "}
             <Link href="/privacidade">
@@ -56,41 +56,41 @@ function Login() {
             <h2>Ou conecte-se com</h2>
           </div>
 
-          <div className="hidden md:flex flex-row gap-3">
-            <span className="rounded-full border-2 border-gray-600 p-2">
-              <Image src={GoogleIcon} width={40} height={40} alt="" />
-            </span>
+          <ul className="hidden md:flex flex-row gap-3">
+            <li className="rounded-full border-2 border-gray-600 md:p-3 ">
+              <div className="pr-[1px]">
+                <Image src={GoogleIcon} width={40} height={40} alt="" />
+              </div>
+            </li>
 
-            <span className="rounded-full border-2 border-gray-600 p-2">
-              <Image src={AppleIcon} width={40} height={40} alt="" />
-            </span>
+            <li className="rounded-full border-2 border-gray-600 md:p-3 md:ml-3">
+              <div className="mb-[4px] pr-[1.5px]">
+                <Image src={AppleIcon} width={40} height={40} alt="" />
+              </div>
+            </li>
 
-            <span className="rounded-full border-2 border-gray-600 p-2">
-              <Image src={SsoIcon} width={40} height={40} alt="" />
-            </span>
-          </div>
+            <li className="rounded-full border-2 border-gray-600 md:p-3 md:ml-3">
+              <div className="ml-[4px] mt-[3px]">
+                <Image src={SsoIcon} width={40} height={40} alt="" />
+              </div>
+            </li>
+          </ul>
         </div>
       </article>
 
       {/*elipses*/}
-      <article className="">
-        <ul className="flex w-full h-full justify-center items-center">
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={Elipse49} width={433} height={960} alt="" />
-            </div>
-          </li>
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={Elipse50} width={615} height={985} alt="" />
-            </div>
-          </li>
-          <li className="">
-            <div className="flex justify-center items-center">
-              <Image src={ti51} width={904 - 310} height={851 - 310} alt="" />
-            </div>
-          </li>
-        </ul>
+      <article className="hidden relative md:flex">
+        <div className="">
+          <div className="absolute  top-0 right-0 z-0">
+            <Image src={Elipse49} width={433} height={960} alt="" />
+          </div>
+          <div className="absolute  top-18 right-0 z-10">
+            <Image src={Elipse50} width={615} height={985} alt="" />
+          </div>
+          <div className="absolute -top-4 z-20">
+            <Image src={ti51} width={904 - 310} height={851 - 310} alt="" />
+          </div>
+        </div>
       </article>
     </section>
   );

@@ -24,18 +24,18 @@ const links = {
 
 function Login() {
   return (
-    <section className="grid grid-cols-2">
+    <section className="md:grid md:grid-cols-2 overflow-y-auto">
       <article className="flex flex-col items-center">
         <div className="mt-[2.5em]">
           <p
             style={{ fontFamily: "'Inter', sans-serif" }}
-            className="text-2xl font-bold md:text-4xl">
+            className="text-3xl font-bold md:text-4xl">
             Crie sua Conta
           </p>
         </div>
         <Form />
 
-        <div className="md:my-4" style={font}>
+        <div className=" mt-4 md:mt-2" style={font}>
           <p className="">
             Ao continuar, eu concordo com a{" "}
             <Link href="/privacidade">
@@ -51,30 +51,36 @@ function Login() {
           </p>
         </div>
 
-        <div className="md:flex flex-col justify-center items-center">
-          <div className="md:my-8 text-xl">
+        <div className="flex-col justify-center items-center flex">
+          <div className="my-8 md:my-6 text-md">
             <h2>Ou conecte-se com</h2>
           </div>
 
-          <ul className="hidden md:flex flex-row gap-3">
-            <li className="rounded-full border-2 border-gray-600 md:p-3 ">
+          <ul className="flex flex-row gap-6">
+            <li className="rounded-full border-2 border-gray-600 p-2 md:p-3 ">
               <div className="pr-[1px]">
                 <Image src={GoogleIcon} width={40} height={40} alt="" />
               </div>
             </li>
 
-            <li className="rounded-full border-2 border-gray-600 md:p-3 md:ml-3">
+            <li className="rounded-full border-2 border-gray-600 p-2 md:p-3 md:ml-3">
               <div className="mb-[4px] pr-[1.5px]">
                 <Image src={AppleIcon} width={40} height={40} alt="" />
               </div>
             </li>
 
-            <li className="rounded-full border-2 border-gray-600 md:p-3 md:ml-3">
+            <li className="rounded-full border-2 border-gray-600 p-2 md:p-3 md:ml-3">
               <div className="ml-[4px] mt-[3px]">
                 <Image src={SsoIcon} width={40} height={40} alt="" />
               </div>
             </li>
           </ul>
+        </div>
+        <div className="mt-8 flex flex-row min-w-fit max-w-fit justify-center items-center gap-2 md:hidden">
+          <p>Já possui conta?</p>
+          <a href="#" className="text-blue-500">
+            Fazer Login
+          </a>
         </div>
       </article>
 

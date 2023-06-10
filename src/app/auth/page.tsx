@@ -25,7 +25,7 @@ const links = {
 function Login() {
   return (
     <>
-    <section className="md:grid md:grid-cols-2 h-screen overflow-y-auto">
+    <section className="h-screen overflow-y-auto lg:grid lg:grid-cols-2 2xl:max-w-screen-xl ">
       <article className="flex flex-col items-center" >
         <div className="mt-[2.5em]">
           <p
@@ -86,7 +86,7 @@ function Login() {
       </article>
 
       {/*elipses*/}
-      <article className="hidden relative md:block overflow-y-hidden h-full" >
+      <article className="hidden relative overflow-y-hidden h-full lg:block" >
 
           <div className="absolute  top-0 right-0 z-0 overflow-hidden">
             <Image src={Elipse49} width={323} height={350} alt="" className="overflow-y-hidden"/>

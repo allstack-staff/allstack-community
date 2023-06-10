@@ -26,6 +26,41 @@
 
 /*
 body {
+  scrollbar-width: thin;
+  scrollbar-color: purple;
+}
+*/
+
+/* Estiliza a scrollbar no Chrome, Edge e Safari */
+
+ body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 4px; /* Torna a scrollbar levemente arredondada */
+}
+/*
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(purple, blue);  Define o gradiente
+  border-radius: 4px;  Torna o polegar da scrollbar levemente arredondado
+}
+*/
+
+/* Estiliza a scrollbar no Firefox
+body {
+  scrollbar-width: thin;
+  scrollbar-color: purple;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: purple;
+}
+*/
+
+
+
+
+/*
+body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
